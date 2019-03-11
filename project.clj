@@ -8,7 +8,9 @@
                  [duct/module.web "0.7.0"]
                  [duct/module.ataraxy "0.3.0"]
                  [duct/module.sql "0.5.0"]
-                 [org.xerial/sqlite-jdbc "3.25.2"]]
+                 [org.xerial/sqlite-jdbc "3.25.2"]
+                 [cljfmt "0.5.1"]
+                 [hiccup "1.0.5"]]
   :plugins [[duct/lein-duct "0.11.2"]]
   :main ^:skip-aot film-ratings.main
   :uberjar-name "film-ratings.jar"
