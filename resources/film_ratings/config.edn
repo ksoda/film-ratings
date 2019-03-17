@@ -5,8 +5,8 @@
   {:routes
    {
     [:get "/"] [:film-ratings.handler/index]
-    ;; "/add-index"
-    ;; {:get [:film/show-create]
+    "/add-index"
+    {:get [:film/show-create]}
     ;;  [:post {film-form :form-params}] [:film/create film-form]}
    }
   }
@@ -15,8 +15,8 @@
   {}
  }
 
-  ;; :film-ratings.handler.film/show-create
-  ;; {}
+  :film-ratings.handler.film/show-create
+  {}
   ;; :film-ratings.handler.film/create
   ;; {}
   ;; {:db #ig/ref :duct.database/sql}

@@ -1,11 +1,11 @@
-;; (ns film-ratings.views.film
-;;   (:require [film-ratings.views.template :refer [page labeled-radio]]
-;;             [hiccup.form :refer [form-to label text-field text-area submit-button]]
-;;             [ring.util.anti-forgery :refer [anti-forgery-field]]))
-;;
-;; (defn create-film-view
-;;   []
-;;   (page
+(ns film-ratings.views.film
+  (:require [film-ratings.views.template :refer [page labeled-radio]]
+            [hiccup.form :refer [form-to label text-field text-area submit-button]]
+            [ring.util.anti-forgery :refer [anti-forgery-field]]))
+
+(defn create-film-view
+  []
+  (page [:div]))
 ;;    [:div.container.jumbotron.bg-light
 ;;     [:div.row
 ;;      [:h2 "Add a film"]]
@@ -23,7 +23,7 @@
 ;;               [:div.form-group.btn-group.col-12
 ;;                (map (labeled-radio "rating") (repeat 5 false) (range 1 6))]
 ;;               [:div.form-group.col-12.text-center
-;;                (submit-button {:class "btn btn-primary text-center"} "Add")])]]))
+;;                (submit-button {:class "btn btn-primary text-center"} "Add")])]])))
 ;;
 ;; (defn- film-attributes-view
 ;;   [name description rating]
